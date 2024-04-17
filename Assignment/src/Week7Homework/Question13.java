@@ -8,28 +8,28 @@ public class Question13 {
         Scanner scanner = new Scanner(System.in);         //if else
 
         System.out.print("Enter first number: ");
-        int num1 = scanner.nextInt();
+        int n1 = scanner.nextInt();
 
         System.out.print("Enter second number: ");
-        int num2 = scanner.nextInt();
+        int n2 = scanner.nextInt();
 
         System.out.print("Enter operation symbol (+, -, *, /): ");
-        char operation = scanner.next().charAt(0);
+        char symbol = scanner.next().charAt(0);
 
         double result;
 
-        if (operation == '+') {
-            result = num1 + num2;
+        if (symbol == '+') {
+            result = n1 + n2;
             System.out.println("Result: " + result);
-        } else if (operation == '-') {
-            result = num1 - num2;
+        } else if (symbol == '-') {
+            result = n1 - n2;
             System.out.println("Result: " + result);
-        } else if (operation == '*') {
-            result = num1 * num2;
+        } else if (symbol == '*') {
+            result = n1 * n2;
             System.out.println("Result: " + result);
-        } else if (operation == '/') {
-            if (num2 != 0) {
-                result = num1 / num2;
+        } else if (symbol == '/') {
+            if (n2 != 0) {
+                result = n1 / n2;
                 System.out.println("Result: " + result);
             } else {
                 System.out.println("Error: Division by zero");
@@ -39,6 +39,8 @@ public class Question13 {
         }
 
     }
+
+
 }
 
 
